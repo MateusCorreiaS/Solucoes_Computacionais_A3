@@ -4,10 +4,7 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
         Scanner scan = new Scanner (System.in);
-        Medico medico = new Medico();
-
-
-
+        Medico medico = new Medico(id, nome, cpf, telefone, endereco, crm, especialidade);
 
     }
 }
