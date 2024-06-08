@@ -2,43 +2,53 @@ import java.time.*;
 
 public class Consulta {
 
-    private int protocolo;
-    private String paciente;
-    private String medico;
+    private Paciente paciente;
+    private Medico medico;
     private LocalDate data;
     private LocalTime hora;
 
-    public Consulta(int protocolo, String paciente, String medico, LocalDate data, LocalTime hora) {
-        this.protocolo = protocolo;
+    public Consulta(Paciente paciente, Medico medico, LocalDate data, LocalTime hora) {
         this.paciente = paciente;
         this.medico = medico;
         this.data = data;
         this.hora = hora;
     }
 
-    public int getProtocolo() {
-        return protocolo;
-    }
-
-    public void setProtocolo(int protocolo) {
-        this.protocolo = protocolo;
-    }
-
     // Getter e Setter para paciente
-    public String getPaciente() {
+    public Paciente getPaciente() {
         return paciente;
     }
 
-    public void setPaciente(String paciente) {
+    public void setPaciente(Paciente paciente) {
         this.paciente = paciente;
     }
 
     // Getter e Setter para medico
-    public String getMedico() {
+    public Medico getMedico() {
         return medico;
     }
 
-    public void setMedico(String medico) {
+    public void setMedico(Medico medico) {
         this.medico = medico;
     }
+
+    public LocalDate getData(){
+        return data;
+    }
+
+    public LocalDate setData(LocalDate data){
+        return data;
+    }
+
+    public LocalTime getHora(){
+        return hora;
+    }
+
+    public LocalTime setHora(LocalTime hora){
+        return hora;
+    }
 }
+
+
+
+

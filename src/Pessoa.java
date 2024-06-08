@@ -5,14 +5,14 @@ public class Pessoa {
     private String endereco;
     private int id;
 
-    public Pessoa(int id, String nome, String cpf, String telefone, String endereco) {
+    public Pessoa(int id, String nome, String cpf, String endereco) {
         this.id = id;
         this.nome = nome;
         this.cpf = cpf;
         this.endereco = endereco;
     }
 
-    public Pessoa(int id, String nome, String cpf, String telefone) {
+    public Pessoa(int id, String nome, String cpf) {
         this.id = id;
         this.nome = nome;
         this.cpf = cpf;

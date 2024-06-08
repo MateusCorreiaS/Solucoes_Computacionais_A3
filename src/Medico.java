@@ -29,7 +29,7 @@ public class Medico extends Pessoa {
     }
 
     public String exibeDados() {
-        return "Identificação: " + getId() +
+        return "\nDados do médico ID: " + getId() +
                 "\nNome: " + getNome() +
                 "\nCPF: " + getCpf() +
                 "\nEndereço: " + getEndereco() +
