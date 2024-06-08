@@ -1,9 +1,7 @@
 public class Pessoa {
 
-    private String crm;
     private String nome;
     private String cpf;
-    private String telefone;
     private String endereco;
     private int id;
 
@@ -11,7 +9,6 @@ public class Pessoa {
         this.id = id;
         this.nome = nome;
         this.cpf = cpf;
-        this.telefone = telefone;
         this.endereco = endereco;
     }
 
@@ -19,7 +16,6 @@ public class Pessoa {
         this.id = id;
         this.nome = nome;
         this.cpf = cpf;
-        this.telefone = telefone;
         endereco = "ENDEREÇO NÃO INFORMADO.";
     }
 
@@ -33,10 +29,6 @@ public class Pessoa {
 
     public String getCpf() {
         return cpf;
-    }
-
-    public String getTelefone() {
-        return telefone;
     }
 
     public String getEndereco() {
@@ -55,13 +47,8 @@ public class Pessoa {
         return cpf;
     }
 
-    public String setTelefone() {
-        return telefone;
-    }
-
     public String setEndereco() {
         return endereco;
-
     }
 
 }
